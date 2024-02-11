@@ -1,0 +1,53 @@
+@font-face {
+  font-family:'HankenGrotesk' ;
+  src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+:root{
+  --fofa-hanken:'HankenGrotesk'
+
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 18px;
+  font-family: var(--fofa-hanken);
+  width: 100%;
+  min-width: 375px;
+  max-width: 1440px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.container{
+  margin-top: 0.5em;
+  display: flex;
+  width: 50ch;
+  justify-content: center;
+  align-items: center ;
+}
+.left-items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: purple;
+  gap: 10em;
+  border-radius: 10px;
+}
+
+.right-items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  width: 50%; 
+  gap: 10em;
+  border-radius: 10px;
+}
