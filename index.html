@@ -3,35 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Summay component</title>
+  <title>Summary component</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <div class="left-items">
-      <p class="up-text">
-        Your result
-      </p>
-      <div class="round-score">
-        <span class="big-text">76</span>
-        <span class="small-text">of 100</span>
+    <div class="card">
+      <div class="left">
+        <h3 class="title-left">Your result</h3>
+        <div class="round-score">
+          <h1>76</h1>
+          <p>of 100</p>
+        </div>
+        <div class="sub-text">
+          <h3>Great</h3>
+          <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
       </div>
-      <div class="low-section">
-        <span>Great</span>
-        <span>You scored higher than 65% of the people who have taken these tests.</span>
+      <div class="right">
+        <h3 class="title-ri">Summary</h3>
+        <div class="right-elements">
+          <div class="element reaction">
+            <div class="badge">
+              <img src="assets/images/icon-reaction.svg" alt="">
+              <p>Reaction</p>
+            </div>
+            </div>
+          <div class="element memory">
+            <div class="badge">
+              <img src="assets/images/icon-memory.svg" alt="">
+              <p>Memory</p>
+            </div>  
+          </div>
+          <div class="element verbal">
+            <div class="badge">
+              <img src="assets/images/icon-verbal.svg" alt="">
+              <p>Verbal</p>
+            </div>
+          </div>
+          <div class="element visual">
+            <div class="badge">
+              <img src="assets/images/icon-visual.svg" alt="icon">
+              <p>Visual</p>
+            </div>
+          </div>
+        </div>
+        <div class="button-right">Continue</div>
       </div>
-    </div>
-    <div class="right-items">
-      <p class="up-text sum">
-        Summary
-      </p>
-      <div class="flat-score">
-        <div class="score">Reaction</div>
-        <div class="score">Memory</div>
-        <div class="score">Verbal</div>
-        <div class="score">Visual</div>
-      </div>
-      <div class="button">Continue</div>
     </div>
   </div>
 </body>
