@@ -32,6 +32,7 @@ body{
   min-height: 100vh;
   color: black;
   background-color: hsl(0, 38%, 97%);
+  
 }
 body{
   display: flex;
@@ -47,7 +48,6 @@ body{
 .card{
   display: flex;
   justify-content: space-between;
-  
 }
 .left{
   text-align: center;
@@ -115,11 +115,23 @@ body{
   justify-content: space-between;
   align-items: center;
   padding: 0.7rem 0.2rem;
+  gap: .2em;
+}
+.badge p:nth-child(2){
+  margin-right:auto;
+}
+.badge p:nth-child(3){
+  color: var(--c-n-dark-gray-blue);
+}
+.badge span:nth-child(4){
+  color: gray;
 }
 .element{
-  padding: 0.1em 0.1em;
-  border: 1px solid black;
+  padding: 0.1em 0.6em;
+  /* border: 1px solid black; */
+  border-radius: 0.6em;
 }
+
 .reaction{
   background: var(--c-light-red);
 }
@@ -148,3 +160,19 @@ body{
   cursor: pointer;
 }
 
+@media screen and (max-width:650px) {
+  body{
+    align-items: flex-start;
+    background-color: var(--c-n-white);
+  }
+  .card{
+    flex-direction: column;
+  }
+  .left{
+    width: 100%;
+  }
+  .right{
+    width: 100%;
+  }
+
+}
